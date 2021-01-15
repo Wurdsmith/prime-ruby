@@ -1,1 +1,11 @@
-# Add  code here!
+def prime?(number)
+    d = 2
+        if number > 1
+            range = (d..number-1).to_a
+            range.none? do |test|
+            number % test == 0
+            end
+
+        else false
+    end
+end
